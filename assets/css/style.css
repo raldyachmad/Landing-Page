@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: poppins;
+  background-color: whitesmoke;
+  color: #585858;
+}
+
+article {
+  margin: 10px;
+}
+
+header h1 {
+  line-height: 4rem;
+}
+header p {
+  line-height: 2.5rem;
+}
+
+article h2 {
+  margin-bottom: 15px;
+}
+
+article {
+  margin-top: 20px;
+}
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#Profile h2 {
+  text-align: center;
+}
+#Profile p {
+  text-align: center;
+  margin: 10px;
+}
+.profile {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 7px solid white;
+  box-shadow: 0 0px 3px 0 #0000006c;
+}
+
+td span {
+  font-weight: bold;
+  text-align: left;
+}
+
+table {
+  margin: 10px auto;
+}
+
+h2,
+h3,
+h4 {
+  color: #00c684;
+}
+h3 {
+  line-height: 2em;
+}
+b {
+  line-height: 2em;
+}
+
+footer {
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: 100px;
+  background-color: #00c684;
+}
+
+footer p {
+  text-align: center;
+  line-height: 100px;
+  color: white;
+}
+
+.card {
+  border: 2px solid #b6b6b64d;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0px 15px 0 #55555534;
+}
+
+.jumbotron {
+  padding: 70px;
+  background-color: #6d8b7c;
+  text-align: center;
+  color: white;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position-y: -200px;
+}
+
+.jumbotron h1 {
+  font-family: "Merienda", cursive;
+  font-size: 2.5em;
+  line-height: normal;
+}
+
+.jumbotron p {
+  font-size: 1.8em;
+  line-height: normal;
+  font-family: "Caveat", cursive;
+}
+
+header {
+  display: inline;
+}
+
+.search {
+  color: #ffffff;
+  width: 24.5%;
+  margin: 20px 10px 0 0;
+  text-align: center;
+  float: right;
+  background-color: #00c684;
+}
+.search input[type="text"] {
+  background-color: #00c684;
+  padding: 7px 10px;
+  font-size: 17px;
+  width: 70%;
+  border: 1px double #ffffffab;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+input::placeholder {
+  color: #ffffffab;
+}
+
+input:focus,
+input:enabled {
+  color: #ffff;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 10px;
+  float: left;
+}
+
+header nav {
+  padding: 15px;
+  font-size: 1.1em;
+  background-color: #00c684;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: white;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  font-family: poppins;
+}
+
+p {
+  font-size: 1em;
+}
+
+section {
+  float: left;
+  width: 74%;
+}
+
+aside {
+  float: left;
+  width: 26%;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+aside article img {
+  border-radius: 100%;
+  width: 500px;
+}
+
+img {
+  border-radius: 3px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #00c684;
+  font-family: poppins;
+  font-size: 1em;
+  width: fit-content;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+button:hover {
+  border: 2px solid #00c684;
+  color: #00c684;
+  background-color: white;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  line-height: 5px;
+}
+
+button.atas {
+  position: fixed;
+  bottom: 10vh;
+  text-align: center;
+  right: 5vw;
+  border-radius: 50px;
+  background-color: #00c684;
+  color: white;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.atas p:nth-child(2) {
+  line-height: 5px;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.atas:hover {
+  background-color: #00da91;
+}
+
+@media screen and (max-width: 1000px) {
+  .jumbotron {
+    padding: 30px;
+  }
+  .jumbotron h1 {
+    font-size: 1.5em;
+  }
+  .jumbotron p {
+    font-size: 1em;
+  }
+
+  header ul li {
+    font-size: 1rem;
+  }
+  aside,
+  section {
+    width: 100%;
+  }
+
+  .search {
+    width: 95%;
+    margin-bottom: 0;
+  }
+
+  article {
+    overflow: auto;
+  }
+}
