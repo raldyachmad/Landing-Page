@@ -17,6 +17,8 @@ body {
 
 article {
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 header h1 {
@@ -67,7 +69,7 @@ table {
 h2,
 h3,
 h4 {
-  color: #00c684;
+  color: #14a2cd;
 }
 h3 {
   line-height: 2em;
@@ -80,7 +82,7 @@ footer {
   margin: 20px 0 0 0;
   width: 100%;
   height: 100px;
-  background-color: #00c684;
+  background-color: #14a2cd;
 }
 
 footer p {
@@ -99,7 +101,7 @@ footer p {
 
 .jumbotron {
   padding: 70px;
-  background-color: #6d8b7c;
+  background-color: #6d888b;
   text-align: center;
   color: white;
   background-image: url("../img/jumbotron.jpg");
@@ -126,17 +128,18 @@ header {
 
 .search {
   color: #ffffff;
-  width: 24.5%;
-  margin: 20px 10px 0 0;
-  text-align: center;
-  float: right;
-  background-color: #00c684;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  padding:16px;
+  background-color: #14a2cd;
 }
 .search input[type="text"] {
-  background-color: #00c684;
+  background-color: #14a2cd;
   padding: 7px 10px;
   font-size: 17px;
-  width: 70%;
+  width: 100%;
   border: 1px double #ffffffab;
   border-radius: 5px;
   margin-right: 20px;
@@ -159,24 +162,29 @@ nav li {
 }
 
 header nav {
-  padding: 15px;
   font-size: 1.1em;
-  background-color: #00c684;
+  padding: 0 24px;
+  background-color: #14a2cd;
   position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
+
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 nav a {
   text-decoration: none;
   color: whitesmoke;
+  opacity: 0.6;
 }
 
 nav a:hover,
 nav a:active,
 nav a:focus {
   color: white;
-  font-weight: 600;
+  opacity: 0.6;
 }
 
 a {
@@ -212,21 +220,22 @@ img {
   border-radius: 3px;
 }
 
-button {
-  margin-top: 20px;
-  background-color: #00c684;
-  font-family: poppins;
+button, .btn {
+  margin-top: 16px;
+  align-self: center;
+  background-color: #14a2cd;
+  font-family: inherit;
   font-size: 1em;
   width: fit-content;
   color: white;
-  padding: 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   border: 2px solid rgba(255, 255, 255, 0);
 }
 
 button:hover {
-  border: 2px solid #00c684;
-  color: #00c684;
+  border: 2px solid #14a2cd;
+  color: #14a2cd;
   background-color: white;
   cursor: pointer;
 }
@@ -246,7 +255,7 @@ button.atas {
   text-align: center;
   right: 5vw;
   border-radius: 50px;
-  background-color: #00c684;
+  background-color: #14a2cd;
   color: white;
   width: 70px;
   height: 70px;
@@ -260,7 +269,7 @@ button.atas {
 }
 
 .atas:hover {
-  background-color: #00da91;
+  background-color: #0d93bb;
 }
 
 @media screen and (max-width: 1000px) {
@@ -273,7 +282,15 @@ button.atas {
   .jumbotron p {
     font-size: 1em;
   }
-
+  header nav{
+    flex-direction: column;
+    padding: 0;
+    width: 100vw;
+  }
+  nav ul{
+    margin: 0;
+    padding: 0;
+  }
   header ul li {
     font-size: 1rem;
   }
